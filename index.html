@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>مهکام</title>
+</head>
+
+<body dir="rtl">
+
+    <!-- category convas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="category" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                <img src="./img/logo.png" class="img-fluid " width="150" alt="">
+            </h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <a class="text-start d-block text-decoration-none cat" data-bs-toggle="collapse" href="#collapseExample"
+                role="button" aria-expanded="false" aria-controls="collapseExample">
+                دسته بندی اول
+            </a>
+
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <a class="text-start d-block text-decoration-none cat" data-bs-toggle="collapse"
+                        href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">
+                        دسته بندی اول
+                    </a>
+                    <div class="collapse" id="collapseExample3">
+                        <div class="card card-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="text-start d-block text-decoration-none cat" data-bs-toggle="collapse" href="#collapseExample2"
+                role="button" aria-expanded="false" aria-controls="collapseExample2">
+                دسته بندی اول
+            </a>
+
+            <div class="collapse" id="collapseExample2">
+                <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when the user activates the relevant trigger.
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- header of site -->
+
+    <div class="container-fluid">
+        <div class="row align-items-center my-2">
+            <div class="col-5 col-lg-2 text-start ">
+                <img src="./img/logo.png" class="img-fluid mx-auto" width="200px" alt="">
+            </div>
+            <div class="col-10 d-none d-lg-block">
+                <div class="row my-2">
+                    <!-- address -->
+                    <div class="col-8">
+                        <span class="mx-2 top-header-txt">
+                            آدرس فروشگاه :
+                            
+                        </span>
+                        <span class="mx-2 top-header-txt">
+                            استان مرکزی شهر ساوه خیابان تعاون نبش کوچه ظفر
+                        </span>
+                    </div>
+
+                    <!-- phone -->
+                    <div class="col-4 text-end pe-xl-5">
+                        <span class="mx-2 top-header-txt">
+                            شماره تماس :
+                        </span>
+                        <span class="mx-2 top-header-txt">
+                            08642242424
+                        </span>
+                    </div>  
+                    
+
+                    <!-- search -->
+                    <div class="col-7 my-2">
+                        <div class="mb-3 search-div">
+                            <input type="text" class="form-control search py-3" id="search"
+                                placeholder="جستجو محصول ، دسته‌بندی ، برند">
+                            <img src="./img/search.svg" class="img-fluid search-icon" width="24" alt="">
+                        </div>
+                    </div>
+
+                    <!-- btns -->
+                    <div class="col-5 my-2 text-end pe-3">
+                        <button type="button" class="btn py-3 btn-header px-3 mx-2">
+                            <span class="mx-xl-2 px-xl-2 btn-icon">
+                                <img src="./img/cart.svg" width="24" class="img-fluid" alt="">
+                            </span>
+                            <span class="mx-2 top-header-txt d-none d-xl-inline">
+                                سبد خرید
+                            </span>
+                        </button>
+                        <button type="button" class="btn py-3 btn-header px-3 mx-2">
+                            <span class="mx-xl-2 px-xl-2 btn-icon">
+                                <img src="./img/login.svg" width="22" class="img-fluid" alt="">
+                            </span>
+                            <span class="mx-2 top-header-txt d-none d-xl-inline">
+                                ورود / ثبت نام
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- navs -->
+            <div class="col-7 col-lg-12  ">
+                <ul class="nav px-2 px-lg-4">
+                    <li class="nav-item mx-1 d-none d-sm-block d-lg-none">
+                        <a class="btn more-btn" aria-current="page" href="#">
+                            <span class="mx-0">
+                                <img src="./img/white-cart.svg" class="img-fluid" width="24" alt="">
+                            </span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1 d-lg-none">
+                        <a class="btn more-btn" aria-current="page" href="#">
+                            <span class="mx-0">
+                                <img src="./img/white-login.svg" class="img-fluid" width="24" alt="">
+                            </span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="btn more-btn" data-bs-toggle="offcanvas" href="#category" role="button"
+                            aria-controls="category">
+                            <span class="mx-0">
+                                <img src="./img/more.svg" class="img-fluid" width="24" alt="">
+                            </span>
+                            <span class="mx-lg-3 d-none d-lg-inline px-lg-3">
+                                موارد بیشتر
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item mx-lg-3 mx-xl-4 d-none d-lg-block">
+                        <a class="nav-link top-header-txt" href="#">
+                            پر فروش ترین
+                        </a>
+                    </li>
+                    <li class="nav-item mx-lg-3 mx-xl-4  d-none d-lg-block">
+                        <a class="nav-link top-header-txt" href="#">
+                            جدیدترین
+                        </a>
+                    </li>
+                    <li class="nav-item mx-lg-3 mx-xl-4  d-none d-lg-block">
+                        <a class="nav-link top-header-txt" href="#">
+                            پیشنهاد ویژه
+                        </a>
+                    </li>
+                    <li class="nav-item mx-lg-3 mx-xl-4 d-none d-lg-block">
+                        <a class="nav-link top-header-txt" href="#">
+                            وبلاگ
+                        </a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-4 d-none d-lg-block">
+                        <a class="nav-link top-header-txt" href="#">
+                            تماس با ما
+                        </a>
+                    </li>
+                    <li class="nav-item mx-lg-2 mx-xl-4 d-none d-lg-block">
+                        <a class="nav-link top-header-txt" href="#">
+                            درباره ما
+                        </a>
+                    </li>
+
+                </ul>
+                <div class="divider d-none d-lg-block">
+
+                </div>
+            </div>
+
+            <div class="col-12 my-2 d-lg-none">
+                <div class="mb-3 search-div px-sm-4">
+                    <input type="text" class="form-control search py-3" id="search"
+                        placeholder="جستجو محصول ، دسته‌بندی ، برند">
+                    <img src="./img/search.svg" class="img-fluid search-icon" width="24" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- banner of site -->
+
+    <div class="container-fluid my-lg-2 d-none d-md-block">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" class="img-fluid w-100" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner.png" class="img-fluid w-100" alt="">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!-- best -->
+
+    <div class="container-fluid ">
+        <div class="row px-2 middel">
+
+            <div class="col-12 col-md-6 col-lg-4 p-md-4 my-3">
+                <h5 class="title">
+                    پر فروش‌ترین ها
+                </h5>
+                <div class="row">
+                    <div class="col-6 text-end text-start"
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product1.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-6" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <div class="col-6 text-end text-start"
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product1.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-6" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 p-md-4 my-3">
+                <h5 class="title">
+                    پر فروش‌ترین ها
+                </h5>
+                <div class="row">
+                    <div class="col-6 text-end text-start"
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product1.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-6" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <div class="col-6 text-end text-start"
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product1.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-6" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 p-lg-4 my-3 d-md-none d-lg-block">
+                <h5 class="title">
+                    پر فروش‌ترین ها
+                </h5>
+                <div class="row">
+                    <div class="col-6 text-end text-start"
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product1.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-6" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                    <div class="col-6 text-end text-start"
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product1.png" class="img-fluid w-100" alt="">
+                    </div>
+                    <div class="col-6" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                        <img src="./img/product2.png" class="img-fluid w-100" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="swiper mySwiper phone">
+            <h5 class="title mb-3">
+                پر فروش ترین‌ها
+            </h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/product1.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product2.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product1.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product2.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper mySwiper phone">
+            <h5 class="title my-3">
+                محبوب‌ترین ها
+            </h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/product1.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product2.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product1.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product2.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper mySwiper phone">
+            <h5 class="title my-3">
+                محبوب‌ترین ها
+            </h5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/product1.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product2.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product1.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/product2.png" class="img-fluid w-100" alt=""
+                        style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!-- titles -->
+
+    <div class="container-fluid ">
+        <div class="row px-3 my-3 d-none d-sm-flex">
+            <div class="col-6 col-sm-4 col-lg-3">
+                <div class="text-center py-3" style="background-color: #B3D9DC;">
+                    <h5 class="title text-center">
+                        عنوان تست
+                    </h5>
+                    <img src="./img/image1.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3">
+                <div class="text-center py-3" style="background-color: #F3BFBC;">
+                    <h5 class="title text-center">
+                        عنوان تست
+                    </h5>
+                    <img src="./img/image2.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-6 col-sm-4 col-lg-3 d-none d-sm-block">
+                <div class="text-center py-3" style="background-color: #C6D9E0;">
+                    <h5 class="title text-center">
+                        عنوان تست
+                    </h5>
+                    <img src="./img/image4.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-3 d-none d-lg-block">
+                <div class="text-center py-3" style="background-color: #039DAF;">
+                    <h5 class="title text-center">
+                        عنوان تست
+                    </h5>
+                    <img src="./img/image3.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper d-sm-none my-3 mx-3">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="text-center py-3" style="background-color: #B3D9DC;">
+                        <h5 class="title text-center">
+                            عنوان تست
+                        </h5>
+                        <img src="./img/image1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-center py-3" style="background-color: #F3BFBC;">
+                        <h5 class="title text-center">
+                            عنوان تست
+                        </h5>
+                        <img src="./img/image2.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-center py-3" style="background-color: #039DAF;">
+                        <h5 class="title text-center">
+                            عنوان تست
+                        </h5>
+                        <img src="./img/image3.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="text-center py-3" style="background-color: #C6D9E0;">
+                        <h5 class="title text-center">
+                            عنوان تست
+                        </h5>
+                        <img src="./img/image4.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+
+    <!-- products -->
+
+    <div class="container-fluid my-4">
+
+        <h5 class="title">
+            جدیدترین‌های شیائومی
+        </h5>
+
+        <div class="swiper mySwiper2 my-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <h5 class="title">
+            جدیدترین‌های شیائومی
+        </h5>
+
+        <div class="swiper mySwiper2 my-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <h5 class="title">
+            جدیدترین‌های شیائومی
+        </h5>
+
+        <div class="swiper mySwiper2 my-3">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide p-2">
+                    <div class="text-center product-div px-2 py-4">
+                        <img src="./img/product4.png" class="img-fluid mx-auto" alt="">
+                        <h5 class="text-center title my-2">
+                            عنوان تست اول
+                        </h5>
+                        <div class="text-start px-3 mt-2 title">
+                            <del>
+                                120000
+                            </del>
+                        </div>
+                        <div class="d-flex justify-content-between my-3">
+                            <div>
+                                <span class="discount text-white">
+                                    10%
+                                </span>
+                                <span class="price mx-2 ">
+                                    100000
+                                    تومان
+                                </span>
+                            </div>
+                            <div>
+                                <span class="title">
+                                    4.6
+                                </span>
+                                <span>
+                                    <img src="./img/star.svg" class="img-fluid" width="20" alt=""
+                                        style="vertical-align: text-top;">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </div>
+
+    <!-- conditions -->
+
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-lg-3 py-4 px-3 text-center" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                <img src="./img/guaranty.svg" class="img-fluid mb-3" width="50" alt="">
+                <h4 class="title text-center">
+                    ضمانت اصل بودن کالا
+                </h4>
+                <span class="title text-center mx-auto">
+                    ضمانت اصالت و گارانتی کالا
+                </span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 py-4 px-3 text-center" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                <img src="./img/return.svg" class="img-fluid mb-3" width="50" alt="">
+                <h4 class="title text-center">
+                    ضمانت بازگشت
+                </h4>
+                <span class="title text-center mx-auto">
+                    ضمانت اصالت و گارانتی کالا
+                </span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 py-4 px-3 text-center" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                <img src="./img/fast.svg" class="img-fluid mb-3" width="50" alt="">
+                <h4 class="title text-center">
+                    تحویل اکسپرس
+                </h4>
+                <span class="title text-center mx-auto">
+                    ضمانت اصالت و گارانتی کالا
+                </span>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 py-4 px-3 text-center" style="border: 1px solid #FE4D1B66; border-collapse: collapse;">
+                <img src="./img/pay.svg" class="img-fluid mb-3" width="50" alt="">
+                <h4 class="title text-center">
+                    پرداخت در محل
+                </h4>
+                <span class="title text-center mx-auto">
+                    ضمانت اصالت و گارانتی کالا
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+
+    <footer class="container-fluid my-4 px-4">
+
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-2 my-3 ">
+                <h5 class="title my-2">
+                    راهنمای خرید از مهکام
+                </h5>
+                <a href="" class="text-decoration-none title my-2">
+                    ثبت سفارش
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    رویه ارسال سفارشات
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    پیگیری سفارش
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    راهنمای پرداخت
+                </a>
+                <br>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 my-3 ">
+                <h5 class="title my-2">
+                    خدمات مشتریان
+                </h5>
+                <a href="" class="text-decoration-none title my-2">
+                    پاسخ به سوالات مشتریان
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    رویه بازگشت کالا
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    شرایط استفاده
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    حریم خصوصی
+                </a>
+                <br>
+            </div>
+            <div class="col-12 col-sm-6 col-md-2 my-3 ">
+                <h5 class="title my-2">
+                    لینک‌های مهم
+                </h5>
+                <a href="" class="text-decoration-none title my-2">
+                    درباره ما
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    تماس با ما
+                </a>
+                <br>
+                <a href="" class="text-decoration-none title my-2">
+                    وبلاگ
+                </a>
+                <br>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 my-3 ">
+                <h5 class="title my-2">
+                    خرید مطمئن از مهکام
+                </h5>
+                <div class="d-flex">
+                    <a href="" class="text-decoration-none title my-2">
+                        <img src="./img/enamad3.png" class="img-fluid d-inline" alt="">
+                    </a>
+
+                    <a href="" class="text-decoration-none title my-2">
+                        <img src="./img/enamad2.png" class="img-fluid d-inline" alt="">
+
+                    </a>
+
+                    <a href="" class="text-decoration-none title my-2">
+                        <img src="./img/enamad1.png" class="img-fluid d-inline" alt="">
+
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 my-3">
+                <h5 class="title">
+                    چرا مهکام را برای خرید انتخاب کنیم؟
+                </h5>
+                <p class="title">
+                    لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                    و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+                    کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و
+                    آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه
+                    ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که
+                    تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی
+                    دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+
+
+                </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

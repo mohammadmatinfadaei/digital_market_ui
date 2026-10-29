@@ -1,0 +1,149 @@
+@font-face {
+    font-family: yekan;
+    src: url("../font/YekanBakh-Bold.ttf");
+}
+
+*{
+    font-family: yekan;
+}
+
+.top-header-txt{
+    color: #464646;
+}
+.cat{
+    color: #464646;
+
+}
+.cat:hover{
+    color: #F04A46;
+
+}
+.card{
+    border: none !important;
+}
+
+.search{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 50px rgba(254, 77, 27, 0.15);
+    border-radius: 10px;
+    border: none;
+}
+
+.search-div{
+    position: relative;
+
+}
+.search-icon{
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    transform: translateY(-50%);
+}
+
+.btn-icon{
+    border-left: 2px solid #464646;
+}
+
+.btn-header{
+    background: #FFFFFF;
+box-shadow: 0px 4px 50px rgba(254, 77, 27, 0.15);
+border-radius: 10px;
+}
+.more-btn{
+    background: #F04A46;
+border-radius: 5px 5px 0px 0px;
+color: white;
+}
+.more-btn:hover{
+    background: #F04A46;
+border-radius: 5px 5px 0px 0px;
+color: white;
+}
+
+.nav-link:hover{
+    color: #F04A46;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: #FE4D1B26;
+    margin-top: -2px;
+}
+
+.title{
+    color: #464646;
+}
+
+.phone{
+    display: none;
+}
+
+.discount{
+    background: #F04A46;
+border-radius: 10px;
+padding: 2px 7px 2px 7px;
+}
+.price{
+    color: #F04A46;
+}
+
+.product-div{
+    background: #FFFFFF;
+box-shadow: 0px 4px 10px rgba(254, 77, 27, 0.15);
+}
+
+
+@media screen and (max-width:1440px) {
+    
+    .btn-icon{
+        border-left: none;
+    }
+}
+
+
+@media screen and (max-width:991px) {
+    .nav{
+        justify-content: end !important;
+    }
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        left: 45px;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    .more-btn{
+        background: #F04A46;
+    border-radius: 5px;
+    color: white;
+    }
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        left: 35px;
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width:576px) {
+    
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+}
+
+@media screen and (max-width:321px) {
+    
+    .phone{
+        display: block;
+    }
+    .middel{
+        display: none;
+    }
+}
